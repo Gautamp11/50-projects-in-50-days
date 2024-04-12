@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  background-color: #333;
+  color: #222;
+}
+
+.container {
+  background: #fff;
+  width: 100vw;
+  padding: 50px;
+  transform-origin: top left;
+  transition: 0.4s linear;
+}
+
+.container.show-nav {
+  transform: rotate(-20deg);
+}
+
+.container.show-nav + nav li {
+  transform: translateX(0);
+  transition-delay: 0.2s;
+}
+
+.container.show-nav .circle {
+  transform: rotate(-70deg);
+}
+
+.circle-container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+
+.circle {
+  background-color: tomato;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+
+.circle button {
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  background: transparent;
+  border: 0;
+  font-size: 26px;
+  color: white;
+}
+
+.circle button#open {
+  left: 60%;
+}
+
+.circle button#close {
+  top: 60%;
+  left: 40%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+.content {
+  max-width: 1000px;
+  margin: 0px auto;
+  padding: 50px 0;
+}
+
+.content img {
+  max-width: 100%;
+}
+nav {
+  position: fixed;
+  left: 0;
+  bottom: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 30px;
+}
+nav ul li {
+  text-transform: uppercase;
+  margin: 20px 0;
+  color: white;
+  transform: translateX(-100%);
+  transition: 0.4s ease-in;
+}
+
+nav ul li i {
+  margin-right: 10px;
+}
