@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Mulish", sans-serif;
+  background: rgb(71, 88, 102);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  color: white;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px 40px;
+  border-radius: 5px;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.container a {
+  text-decoration: none;
+  color: lightblue;
+}
+
+.form-control {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 300px;
+}
+
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid white;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 1rem;
+  color: white;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+  outline: 0;
+  border-bottom-color: lightblue;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  background-color: lightblue;
+  padding: 15px;
+  font-family: inherit;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 5px;
+  transition: 0.2s ease;
+}
+.btn:focus {
+  outline: 0;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.text {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+.form-control label span {
+  display: inline-block;
+  font-size: 1.2rem;
+  min-width: 5px;
+  transition: 0.3s ease;
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: lightblue;
+  transform: translateY(-30px);
+}
