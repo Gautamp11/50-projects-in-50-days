@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(146, 146, 255);
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background-color: aliceblue;
+  border-radius: 10px;
+  padding: 20px;
+  width: 800px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+h3 {
+  letter-spacing: 2px;
+  opacity: 0.6;
+  font-size: 1.2rem;
+}
+
+#jokebtn {
+  background-color: blueviolet;
+  color: white;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 5px 15px rgba(158, 79, 183, 0.4);
+  transform: translate(1.2);
+  transition: 0.1s ease;
+}
+
+.jokebtn:active {
+  transform: scale(0.98);
+  background-color: rgb(138, 43, 226, 0.8) !important;
+}
+
+.jokebtn:focus {
+  outline: 0;
+}
+
+#joke {
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  letter-spacing: 1.5px;
+}
