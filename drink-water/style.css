@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;700&family=Roboto+Mono:ital@0;1&family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #4d89f6;
+  --secondary-color: #055bfb;
+  --fill-color: #6197fc;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.cup {
+  overflow: hidden;
+  background-color: #fff;
+  height: 320px;
+  width: 120px;
+  background-color: white;
+  border: 3px solid var(--secondary-color);
+  border-radius: 0 0 30px 30px;
+  color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.cups {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 280px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.cup.cup-small {
+  border-radius: 0 0 20px 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 50px;
+  height: 95px;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.cup.cup-small.full {
+  background-color: var(--fill-color);
+  color: white;
+}
+
+.remaining {
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  transition: 0.3s ease;
+}
+
+.remaining small {
+  font-size: 0.7rem;
+}
+
+.percentage {
+  background-color: var(--fill-color);
+  font-size: 20px;
+  transition: 0.3s ease;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
